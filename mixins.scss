@@ -1,0 +1,64 @@
+@import "compass/css3";
+
+//colores
+$blanco : #FFF;
+$negro : #000;
+$rojo : #ed3306;
+$turquesa: #018d7d;
+
+$tipo: 'Raleway', sans-serif;
+
+@mixin flexo{
+	@include display-flex(flex);
+	@include align-items(flex-end);
+	@include justify-content(center);
+}
+
+@mixin flexo2{
+	@include display-flex(flex);
+	@include align-items(start);
+	@include justify-content(center);
+}
+
+@mixin flexo3{
+	@include display-flex(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}
+@mixin transicion($val){
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin wyh {
+	width: 100%;
+	height: auto;
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
