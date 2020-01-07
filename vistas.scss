@@ -1,0 +1,80 @@
+
+@import "compass/css3";
+@import "mixins.scss";
+
+
+.view-solo-motos-no-slider{
+  .view-content{
+    @include flexo2;
+    @include flex-wrap(wrap);
+    .views-row{
+      width:22%;
+      margin: 0 12px 20px 12px;
+      text-align: center;
+    }
+  }
+}
+
+#block-solo-motos-no-slider,
+#block-vista-de-motos{
+    border-top: solid 4px #743ad5;
+    border-bottom: solid 4px #743ad5;
+    border-image: linear-gradient(to right, $negro 0%,$rojo 50%,$negro 100%);
+    border-image-slice: 1;
+    border-width: 5px;
+    padding: 14px 0 8px;
+    .views-field{
+      a{
+        display: block;
+        img{
+          width: 100%;
+          height: auto;
+          max-width:140px;
+        }
+      }
+      span{
+        a{
+          color: $blanco;
+          font-size: 14px;
+        }
+      }
+    }
+}
+
+#block-solo-motos-no-slider{
+  margin-top: 30px;
+  .view-solo-motos-no-slider{
+    .view-content{
+      @include flexo2;
+      @include flex-wrap(wrap);
+      .views-row{
+        width:11.6%;
+          border: solid 1px $rojo;
+          margin: 4px;
+          height: 150px;
+          text-align: center;
+          @include transicion(300ms);
+          &:hover{
+            box-shadow:0px 0px 10px $rojo;
+            border-color: #ed0606;
+        }
+      }
+    }
+  }
+}
+
+#block-vista-de-motos{
+  .owl-item{
+    text-align: center;
+    > div{
+      border: solid 1px $rojo;
+      margin: 4px;
+      height: 150px;
+      @include transicion(300ms);
+      &:hover{
+        box-shadow:0px 0px 10px $rojo;
+        border-color: #ed0606;
+      }
+    }
+  }
+}

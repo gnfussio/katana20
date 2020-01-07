@@ -2,6 +2,7 @@
 @import "compass/css3";
 @import "rotoslider.scss";
 @import "mixins.scss";
+@import "vistas.scss";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap);
 body{
   background: $negro;
@@ -13,6 +14,13 @@ body{
 
 body { font-family:$tipo; }
 
+// front-page
+.path-frontpage{
+  .block-system-main-block{
+    display: none;
+  }
+}
+
 #block-logo{
   figure{
     text-align: center;
@@ -23,11 +31,28 @@ body { font-family:$tipo; }
   }
 }
 
+.page-title{
+  color: $rojo;
+}
+
+.block-system-main-block{
+  p, ul{
+    li{
+      color: $blanco;
+      line-height: 25px;
+    }
+  }
+}
+
+
 #block-menuprincipal{
   nav{
     ul{
+      border-bottom: solid 2px $turquesa;
+      margin-bottom: 17px;
       @include flexo2;
       li{
+        display: inherit;
         list-style: none;
         margin: 0 8px;
         a{
@@ -54,6 +79,82 @@ a {
   }
 }
 
+.page-node-type-page{
+  .page-title{
+    color: $rojo;
+  }
+}
+
+.field--type-text-with-summary{
+  h3, p{
+    color:$blanco;
+  }
+  p{
+    line-height: 22px;
+  }
+}
+
+//blocks
+
+.block{
+  h2{
+    color: $rojo;
+  }
+}
+
+#block-contactoautomotoreslivianos{
+  p{
+    color: $rojo;
+    a{
+      color: $turquesa;
+    }
+  }
+}
+
+.sedesAutomotores{
+  @include flexo2;
+  @include flex-wrap(300ms);
+  @include justify-content(space-around);
+  .sede{
+    width: 22%;
+    h3{
+      font-size: 18px;
+    }
+    p{
+
+    }
+    strong{
+
+    }
+  }
+}
+
+.wrapDistribuidores{
+  @include flexo2;
+  @include flex-wrap(wrap);
+  .provincias{
+    width: 30%;
+  }
+  .distribuidores{
+    width: 65%;
+  }
+  .provincias, .distribuidores{
+    min-width: 285px;
+  }
+}
+.provincias ul li span{
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  @include transicion(300ms);
+  &:hover{
+    color: $turquesa;
+    cursor: pointer;
+  }
+}
+.nover{display: none}
+.ver{display: block}
+
 // content type vehículos
 
 .node--type-vehiculos-productos{
@@ -66,13 +167,61 @@ a {
     }
   }
   .field--name-body{
-
       h4, table{
         color: $blanco;
       }
     }
 }
 
+// Vehiculos / productos
+
+.page-node-type-vehiculos-productos{
+  .page-title{
+    color: $rojo;
+  }
+}
+
+// distribuidores
+
+.distribuidores{
+  h4{
+    color: $blanco;
+  }
+}
+
+.footer-redes{
+  padding: 30px 0;
+}
+
+// webform
+.page-node-type-webform{
+  #block-bootstrap-business-content{
+    .content{
+      background: linear-gradient(to right, $negro 0%,$rojo 50%,$negro 100%);
+      @include background-size(100% 5px);
+      background-repeat: no-repeat;
+      background-position-y: 50%;
+    }
+  }
+}
+
+.node--type-webform{
+    background: $negro;
+    border: solid 4px #743ad5;
+    border-image: linear-gradient(to bottom, $rojo 0%,$negro 100%);
+    border-image-slice: 1;
+    border-width: 5px;
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 500px;
+    align-content: $negro;
+    .form-actions{
+      text-align: center;
+    }
+    header, footer{
+      padding: 0;
+    }
+}
 
 
 blockquote { margin: 40px 40px 24px; border-left: none; padding: 0; position: relative; color: #999; }
@@ -139,13 +288,13 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 
 #main-navigation { }
 
-#banner-inside { padding-top: 60px; margin-bottom: 40px; }
+#banner-inside {  }
 
 #slideshow { }
 
 #top-content {  padding: 40px 0 20px 0; }
 
-#main-content { padding: 60px 0 30px 0; }
+#main-content { }
 
 #main { padding: 0 0 20px; }
 
@@ -154,8 +303,6 @@ thead tr th, thead tr td, tbody tr th, tbody tr td { padding: 8px; line-height: 
 #footer { padding: 60px 0 30px; }
 
 #subfooter { padding: 40px 0 20px; text-align: center; margin-bottom: 20px; }
-
-.block { padding: 0 0 30px 0; clear: both; }
 
 #header-top .block, #main-navigation .block, #banner .block { padding: 0; }
 
@@ -257,11 +404,7 @@ position: absolute; top: 20px; right: 17px; font-size: 11px; font-weight: 400; }
 
 .node header h2 a:hover { text-decoration: none; }
 
-.node__content, #comments, .page-contact #content-wrapper { padding: 20px 40px; }
-
-.node header { padding: 10px 40px 20px; }
-
-.node footer { padding: 20px 40px 20px; }
+.node__content, #comments, .page-contact #content-wrapper { }
 
 .node footer.comment__meta { padding:0; }
 
@@ -321,10 +464,28 @@ th.active img { margin: -4px 0 0 5px; }
 input:focus, input[type="button"], input[type="reset"], input[type="submit"] { -webkit-transition: all 0.3s ease-in-out;
 -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
 
-input.form-text, input.form-email, input.form-search, textarea.form-textarea, select { background-color: #fcfcfc; border: 2px solid #eaeaea; color: #999999; font-size: 14px; padding: 14px; width: 100%;
-min-height: 50px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-
-input.form-text:focus, input.form-email:focus, input.form-search:focus, textarea.form-textarea:focus { background-color: #fff; outline: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+input.form-text,
+input.form-email,
+input.form-search,
+input.form-tel,
+textarea.form-textarea,
+select {
+  background-color: $negro;
+  border: 2px solid $rojo;
+  color: $blanco;
+  font-size: 14px;
+  padding: 14px;
+  width: 100%;
+  min-height: 50px;
+  @include box-shadow(none);
+  @include border-radius(3px);
+  &:focus{
+    background-color: $negro;
+    color: $blanco;
+    outline: none;
+    @include box-shadow(none);
+  }
+}
 
 .search-block-form input.form-search { width: 70%; }
 
@@ -339,8 +500,22 @@ legend { border-bottom: none; font-size: 14px; width: auto; margin: 0;}
 input[type="radio"], input[type="checkbox"] { margin: 0px 0 3px; }
 
 /*buttons*/
-input[type="submit"], input[type="reset"], input[type="button"] { background-color: #444; border: none; box-shadow: none;
-color: #fff; padding: 15px 24px; text-transform: uppercase; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; color: #ffffff; }
+input[type="submit"],
+input[type="reset"],
+input[type="button"]
+  { background-color: $rojo;
+    border: none;
+    box-shadow: none;
+    color: #fff; padding: 15px 24px;
+    text-transform: uppercase;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: $blanco;
+    &:hover{
+      background: $turquesa;
+    }
+  }
 
 input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .highlighted-block .btn:hover,.highlighted-block .btn:focus { color: #ffffff; }
 
@@ -358,9 +533,15 @@ ul.links { padding: 0; margin: 0; list-style-position: inside; }
 ul.links li { margin: 0; }
 
 /* Breadcrumb */
-.breadcrumb {  padding: 14px 20px!important;}
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background-color: $negro;
+  border-radius: 4px;
+ }
 
-.breadcrumb > li { margin: 0 2px 0 0; display: inline; }
+.breadcrumb > li { display: inline;}
 
 /* Search block */
 #header-top #block-search-form { margin: 0; float: right;}
