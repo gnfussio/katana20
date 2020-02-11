@@ -74,14 +74,14 @@
 
 #sliderBox #ring01 > div > div, #sliderBox #ring02 > div > div {
   position: relative;
-  width: 204px;
-  height: 180px;
+  width: 171px;
+  height: 170px;
   cursor: pointer;
   border: solid $rojo 3px;
   boxSizing: border-box;
   -webkit-transform-origin: 0px 0px 0px;
   transform-origin: 0px 0px 0px;
-  @include transform(translateX(479px) translateZ(104px) rotateY(90deg) rotateX(0deg));
+  @include transform(translateX(479px) translateZ(104px) rotateY(88deg) rotateX(0deg));
   span{
     color:transparent;
     font-size: 2em;
@@ -102,14 +102,14 @@
   animation: stop;
 }
 
-$sng : 24;
+$sng : 20;
 
 #s1 {
   @include transform(translate(200px) rotateY($sng*1deg));
 }
   #s1 #s1img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/lite-150_0.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/lite-150_0.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -122,7 +122,7 @@ $sng : 24;
   #s2 #s2img {
     position: absolute;
     background-repeat: no-repeat;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/sr2.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/sr2.png");
     background-position-y: 15px;
   background-repeat: no-repeat;
   background-size: 93%;
@@ -133,7 +133,7 @@ $sng : 24;
 }
   #s3 #s3img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/ttr-110.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/ttr-110.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;}
@@ -143,7 +143,7 @@ $sng : 24;
 }
   #s4 #s4img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/CR6.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/CR6.png");
     background-position-y: 15px;
   background-repeat: no-repeat;
   background-size: 93%;
@@ -154,7 +154,7 @@ $sng : 24;
 }
   #s5 #s5img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/cg200_0.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/cg200_0.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -165,7 +165,7 @@ $sng : 24;
 }
   #s6 #s6img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/LX200.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/LX200.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -176,7 +176,7 @@ $sng : 24;
 }
   #s7 #s7img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/Predator-110.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/Predator-110.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -187,7 +187,7 @@ $sng : 24;
 }
   #s8 #s8img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/SX2-250.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/SX2-250.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -198,7 +198,7 @@ $sng : 24;
 }
   #s9 #s9img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/CRM-150.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/CRM-150.png");
     background-position-y: 15px;
   background-repeat: no-repeat;
   background-size: 93%;
@@ -209,7 +209,7 @@ $sng : 24;
 }
   #s10 #s10img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/GP-250.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/GP-250.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -220,7 +220,7 @@ $sng : 24;
   }
   #s11 #s11img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/cr1-150.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/cr1-150.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -230,7 +230,7 @@ $sng : 24;
   @include transform(translate(200px) rotateY($sng*12deg));}
   #s12 #s12img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/CR5.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/CR5.png");
     background-position-y: 15px;
   background-repeat: no-repeat;
   background-size: 93%;
@@ -241,7 +241,7 @@ $sng : 24;
 }
   #s13 #s13img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/BWS150_0.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/BWS150_0.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -252,7 +252,7 @@ $sng : 24;
    }
   #s14 #s14img {
     position: absolute;
-    background: url("/katana20/sites/default/files/styles/medium/public/2020-01/smx200.png");
+    background: url("/sites/default/files/styles/medium/public/2020-01/smx200.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;
@@ -262,7 +262,37 @@ $sng : 24;
   @include transform(translate(200px) rotateY($sng*15deg)); }
   #s15 #s15img {
     position: absolute;
-    background: url("/katana20/sites/default/files/2020-01/smx150.png");
+    background: url("/sites/default/files/2020-01/smx150.png");
+    background-position-y: 15px;
+     background-repeat: no-repeat;
+     background-size: 93%;
+}
+
+#s16 {
+  @include transform(translate(200px) rotateY($sng*16deg)); }
+  #s16 #s16img {
+    position: absolute;
+    background: url("/sites/default/files/2020-01/easy-1_0.png");
+    background-position-y: 15px;
+     background-repeat: no-repeat;
+     background-size: 93%;
+}
+
+#s17 {
+  @include transform(translate(200px) rotateY($sng*17deg)); }
+  #s17 #s17img {
+    position: absolute;
+    background: url("/sites/default/files/2020-01/easy-2.png");
+    background-position-y: 15px;
+     background-repeat: no-repeat;
+     background-size: 93%;
+}
+
+#s18 {
+  @include transform(translate(200px) rotateY($sng*18deg)); }
+  #s18 #s18img {
+    position: absolute;
+    background: url("/sites/default/files/2020-01/sedna.png");
     background-position-y: 15px;
      background-repeat: no-repeat;
      background-size: 93%;

@@ -1,0 +1,102 @@
+
+@import "compass/css3";
+@import "mixins.scss";
+
+@media only screen and (min-width: 1440px) {
+
+}
+
+@media only screen and (max-width: 1440px) { // Laptop L
+
+}
+
+@media only screen and (max-width: 1024px) { // Laptop
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (min-width: 769px) {
+	.hamburger{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.pmenu{
+		display: none;
+	}
+
+	.hamburger{
+		display: inline-block;
+	}
+	#nav-icon4 {
+		display: block;
+	}
+
+	.ds-2col-stacked-fluid {
+		> .group-left, > .group-right {
+			width: 100%!important;
+			float: inherit!important;
+		}
+	}
+
+	.sedesAutomotores{
+	  .sede{
+	    width: 48%!important;
+	  }
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+
+	  .view-solo-motos-no-slider{
+	    .view-content{
+	      .views-row{
+	        width:42%!important;
+					.views-field-field-foto-producto{
+						a{
+							display: block;
+							img{
+								@include wyh;
+							}
+						}
+					}
+	      }
+	    }
+	  }
+
+    #block-menuprincipal{
+      nav{
+        ul{
+          display: block!important;
+          li{
+							width: 100%!important;
+							text-align: center!important;
+							display: block!important;
+							padding: 6px 0;
+            a{
+              &:hover{
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+		.sedesAutomotores{
+		  .sede{
+		    width: 100%!important;
+
+		  }
+		}
+
+}
+
+@media only screen and (max-width: 320px){
+
+}
